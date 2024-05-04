@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --dark: #090E16;
+    --white-dark: rgba(122, 74, 227, 0.05);
+    --white100: rgb(255, 255, 255);
+    --white50: rgba(255, 255, 255, 0.5);
+    --purple100: rgba(122, 74, 226, 1);
+    --purple50: rgba(122, 74, 226, 0.5);
+    --purple30: rgba(122, 74, 226, 0.3);
+
+    font-family: 'Raleway';
+}
+
+input, button, textarea {
+    font-family: 'Raleway';
+}
+
+body {
+    background-color: var(--dark);
+    margin: 12px 140px;
+}
+
+header {
+    background-color: var(--white-dark);
+    color: var(--white50);
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+
+header .links {
+    display: flex;
+    gap: 16px;
+
+    font-size: 16px;
+}   
+
+header .links a {
+    text-decoration: none;
+    color: var(--white50)
+}
+
+header .links a:hover {
+    color: var(--purple50);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+
+main img {
+    border-radius: 50%;
+}
+
+main .info-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--white100);
+    gap: 16px;
+}
+
+main .info-left .left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .info-left .hand {
+    display: flex;
+    justify-content: center;
+    background-color: var(--purple50);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+main .info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--white100);
+    max-width: 360px;
+}
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1 {
+    color: var(--white100);
+    margin-bottom: 8px;
+}
+
+footer form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+footer form .form input {
+    border-radius: 16px;
+    width: 500px;
+    height: 40px;
+    padding: 8px;
+}
+
+footer form .form textarea {
+    width: 500px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+footer form .form button {
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 12px;
+
+    background-color: var(--purple50);
+}
+
+footer form .form button:hover {
+  background-color: var(--purple30);
+}
