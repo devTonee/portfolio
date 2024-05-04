@@ -132,6 +132,7 @@ footer form .form textarea {
     height: 80px;
     border-radius: 16px;
     padding: 8px;
+    resize: none;
 }
 
 footer form .form button {
